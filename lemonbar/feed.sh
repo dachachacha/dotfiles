@@ -9,7 +9,37 @@ righthard=""
 rightsoft=""
 lefthard=""
 leftsoft=""
+skip="0"
 
+vpn() {
+    #mullvad can take long and hang, hence the solution below
+    RUNNING=$(ps ax | grep "mullvad status" | grep -v grep | wc -l)
+    CONN="VPN: no"
+    if [ "$skip" -eq 5 ]; then
+        STATUS=$(cat ~/tmp/vpn_status | grep "Tunnel" | cut -d ":" -f 2 | tr -d " ")
+        LOCATION=$(cat ~/tmp/vpn_status | grep "Location" | cut -d ":" -f 2 | tr -d " ")
+        if [ "$RUNNING" == 0 ]; then
+            mullvad status > ~/tmp/vpn_status 2>&1 &
+        else
+            PROC=$(ps ax | grep "mullvad status" | grep -v grep | sed "s/^ *//" |cut -d " " -f 1)
+            kill -9 "$PROC"
+            mullvad status > ~/tmp/vpn_status 2>&1 &
+        fi
+    else
+        STATUS=$(cat ~/tmp/vpn_status | grep "Tunnel" | cut -d ":" -f 2 | tr -d " ")
+        LOCATION=$(cat ~/tmp/vpn_status | grep "Location" | cut -d ":" -f 2 | tr -d " ")
+    fi
+    if [ ! -z $STATUS ]; then
+        CONN="$STATUS ($LOCATION)"
+    fi
+    VPN=$CONN
+    echo "$VPN"
+}
+name() {
+    HOST=$(hostname)
+    LNAME=$(uname -r)
+    echo "$HOST - $LNAME"
+}
 clock() {
     DATETIME=$(date "+%T %a %b %d")
     TIME=$(date "+%T")
@@ -52,6 +82,10 @@ wifi() {
 
 while true; do
 
+    skip=$((skip+1))
+    if [ "$skip" == 6 ]; then
+        skip=0
+    fi
 #   color0=$(xrdb -query -all | grep "*color0:" | sed "s/\*color0:\t//")
 #   color1=$(xrdb -query -all | grep "*color1:" | sed "s/\*color1:\t//")
 #   color2=$(xrdb -query -all | grep "*color2:" | sed "s/\*color2:\t//")
@@ -74,6 +108,8 @@ while true; do
     $rightsoft
     $(wifi)
     $righthard
+    $(vpn)
+    $lefthard
 
     %{r}
     $(battery)

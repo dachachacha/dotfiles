@@ -4,7 +4,7 @@
 
 # terminal emulator
 super + Return
-	st
+    st -f 'Liberation Mono-11'
 
 # program launcher
 super + @space
@@ -14,6 +14,9 @@ super + @space
 super + Escape
 	pkill -USR1 -x sxhkd
 
+super + 0
+    slock
+
 #
 # bspwm hotkeys
 #
@@ -21,6 +24,9 @@ super + Escape
 # quit/restart bspwm
 super + alt + {q,r}
 	bspc {quit,wm -r}
+
+super + alt + Escape
+  bspc quit
 
 # close and kill
 super + {_,shift + }w
