@@ -51,7 +51,16 @@ mdate() {
 }
 battery() {
     BATPERC=$(acpi --battery | cut -d, -f2)
-    echo "$BATPERC" | tr "\n" " "
+    batt=$(echo "$BATPERC" | tr "\n" " ")
+    batt="${batt//%}"
+    batt0=$(echo $batt | cut -f1 -d" ")
+    batt1=$(echo $batt | cut -f2 -d" ")
+    if (( $batt0 < 40)) && (($batt1 < 20)); then
+      echo "%{F#FFFF00}%{B#FF0000}$batt0% $batt1% %{F-}%{B-}"
+    else
+      #echo "%{F#FFFF00}%{B#00FF00}$batt0% $batt1% %{F-}%{B-}"
+      echo "$BATPERC" | tr "\n" " "
+    fi
     echo
 }
 workspaces() {

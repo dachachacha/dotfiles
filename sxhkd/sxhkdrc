@@ -17,6 +17,9 @@ super + Escape
 super + 0
     slock
 
+super + c
+    clipmenu
+
 #
 # bspwm hotkeys
 #
