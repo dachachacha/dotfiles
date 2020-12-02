@@ -1,0 +1,3 @@
+alias vi='vim'
+#[[ $TERM != "screen" ]] && exec tmux
+PS1='@ \[\e[0;34m\]\W\[\e[m\] | '
