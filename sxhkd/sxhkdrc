@@ -4,11 +4,15 @@
 
 # terminal emulator
 super + Return
-    st -f 'Liberation Mono-11'
+  alacritty
+
+super + shift + Return
+    st -f 'MesloLGS NF-10'
+    
 
 # program launcher
 super + @space
-	dmenu_run
+	dmenu_run_history
 
 # make sxhkd reload its configuration files:
 super + Escape
