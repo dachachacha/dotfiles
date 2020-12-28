@@ -13,11 +13,13 @@ alias ll='ls -l'
 alias l='ls'
 alias vi='vim'
 alias nnn='nnn -e'
+alias n='nnn -e'
 alias reboot='sudo systemctl reboot'
 alias poweroff='sudo systemctl poweroff'
 alias halt='sudo systemctl halt'
 alias stb="st -f 'Liberation Mono-12'"
 alias startx='ssh-agent startx'
+alias ssh='TERM=xterm ssh'
 
 export HISTSIZE=1000
 export EDITOR=vim
@@ -49,3 +51,5 @@ prompt pure
 
 zmodload zsh/nearcolor
 zstyle :prompt:pure:path color '#187bcd'
+
+export NNN_OPTS="H"

@@ -12,28 +12,29 @@ leftsoft=""
 skip="0"
 
 vpn() {
-    #mullvad can take long and hang, hence the solution below
-    RUNNING=$(ps ax | grep "mullvad status" | grep -v grep | wc -l)
-    CONN="VPN: no"
-    if [ "$skip" -eq 5 ]; then
-        STATUS=$(cat ~/tmp/vpn_status | grep "Tunnel" | cut -d ":" -f 2 | tr -d " ")
-        LOCATION=$(cat ~/tmp/vpn_status | grep "Location" | cut -d ":" -f 2 | tr -d " ")
-        if [ "$RUNNING" == 0 ]; then
-            mullvad status > ~/tmp/vpn_status 2>&1 &
-        else
-            PROC=$(ps ax | grep "mullvad status" | grep -v grep | sed "s/^ *//" |cut -d " " -f 1)
-            kill -9 "$PROC"
-            mullvad status > ~/tmp/vpn_status 2>&1 &
-        fi
-    else
-        STATUS=$(cat ~/tmp/vpn_status | grep "Tunnel" | cut -d ":" -f 2 | tr -d " ")
-        LOCATION=$(cat ~/tmp/vpn_status | grep "Location" | cut -d ":" -f 2 | tr -d " ")
-    fi
-    if [ ! -z $STATUS ]; then
-        CONN="$STATUS ($LOCATION)"
-    fi
-    VPN=$CONN
-    echo "$VPN"
+#    #mullvad can take long and hang, hence the solution below
+#    RUNNING=$(ps ax | grep "mullvad status" | grep -v grep | wc -l)
+#    CONN="VPN: no"
+#    if [ "$skip" -eq 5 ]; then
+#        STATUS=$(cat ~/tmp/vpn_status | grep "Tunnel" | cut -d ":" -f 2 | tr -d " ")
+#        LOCATION=$(cat ~/tmp/vpn_status | grep "Location" | cut -d ":" -f 2 | tr -d " ")
+#        if [ "$RUNNING" == 0 ]; then
+#            mullvad status > ~/tmp/vpn_status 2>&1 &
+#        else
+#            PROC=$(ps ax | grep "mullvad status" | grep -v grep | sed "s/^ *//" |cut -d " " -f 1)
+#            kill -9 "$PROC"
+#            mullvad status > ~/tmp/vpn_status 2>&1 &
+#        fi
+#    else
+#        STATUS=$(cat ~/tmp/vpn_status | grep "Tunnel" | cut -d ":" -f 2 | tr -d " ")
+#        LOCATION=$(cat ~/tmp/vpn_status | grep "Location" | cut -d ":" -f 2 | tr -d " ")
+#    fi
+#    if [ ! -z $STATUS ]; then
+#        CONN="$STATUS ($LOCATION)"
+#    fi
+#    VPN=$CONN
+#    echo "$VPN"
+    echo ""
 }
 name() {
     HOST=$(hostname)
@@ -56,10 +57,10 @@ battery() {
     batt0=$(echo $batt | cut -f1 -d" ")
     batt1=$(echo $batt | cut -f2 -d" ")
     if (( $batt0 < 40)) && (($batt1 < 20)); then
-      echo "%{F#FFFF00}%{B#FF0000}$batt0% $batt1% %{F-}%{B-}"
+      echo "BAT: %{F#FFFF00}%{B#FF0000}$batt0% $batt1% %{F-}%{B-}"
     else
       #echo "%{F#FFFF00}%{B#00FF00}$batt0% $batt1% %{F-}%{B-}"
-      echo "$BATPERC" | tr "\n" " "
+      echo "BAT: $BATPERC" | tr "\n" " "
     fi
     echo
 }
@@ -69,16 +70,19 @@ workspaces() {
 }
 volume() {
     vol=$(amixer get Master | sed -n 's/^.*\[\([0-9]\+\)%.*$/\1/p'| uniq)
-    echo "VOL: $vol%%"
+    echo "VOL: $vol%"
 }
 memory() {
-    mem=$(free -m | grep -E 'Mem' | awk '{print $4}')
-    mb="mB"
-    echo "FREE: $mem$mb"
+    mem=$(free | grep Mem | awk '{print ($3+$5)/1000000}')
+    printf "RAM: %0.2fGB\n" $mem
 }
 processor() {
-    usage=$(grep 'cpu ' /proc/stat | awk '{print ($2+$4)*100/($2+$4+$5)}' | cut -c1-4 )
-    echo "CPU: $usage%%"
+    #usage=$(grep 'cpu ' /proc/stat | awk '{print ($2+$4)*100/($2+$4+$5)}' | cut -c1-4 )
+    usage=$(top -bn1 | grep "Cpu(s)" | \
+           sed "s/.*, *\([0-9.]*\)%* id.*/\1/" | \
+           awk '{print 100 - $1}')
+    #line="    "
+    echo "CPU: $usage%"
 }
 wifi() {
     ssid=$(iw dev wlp4s0 info | grep ssid | cut -d" " -f2 | tr -d " ")
@@ -117,7 +121,6 @@ while true; do
     $rightsoft
     $(wifi)
     $righthard
-    $(vpn)
     $lefthard
 
     %{r}
@@ -130,6 +133,6 @@ while true; do
     )
 
     echo ${data[@]}
-    sleep 3
+    sleep 4
 done
 

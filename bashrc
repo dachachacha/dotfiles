@@ -22,6 +22,7 @@ alias poweroff='sudo systemctl poweroff'
 alias halt='sudo systemctl halt'
 alias stb="st -f 'Liberation Mono-12'"
 alias startx='ssh-agent startx'
+alias ssh='TERM=xterm ssh'
 
 export HISTSIZE=5000
 export EDITOR=vim

@@ -8,7 +8,7 @@ colors:
     text:       '#FAF7EE'
   selection:
     text:       '#FFFFFF'
-    background: '#FFFFFF'
+    background: '#D3D3D3'
   normal:
     black:      '#FAF7EE'
     red:        '#DF201C'
