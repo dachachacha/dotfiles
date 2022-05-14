@@ -1,17 +1,17 @@
-<mxfile host="app.diagrams.net" modified="2022-05-14T14:18:43.072Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Safari/537.36" etag="NRfALla41FDlAf1d3PmL" version="18.0.3" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2022-05-14T14:26:47.578Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Safari/537.36" etag="pFgNjeh0WwjW6J_YqLo2" version="18.0.3" type="github" pages="4">
   <diagram id="jApyYVyt4Udr0EsSBP02" name="SEG Feature considerations">
     <mxGraphModel dx="1559" dy="986" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="baYjomSHSM_FDcd-nVYS-2" value="Assumptions:&amp;nbsp;&lt;br&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;-&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;a perimeterized, segmented network&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- the SMTP Gateway is &lt;i&gt;Secure&lt;/i&gt; Mail Gateway service hosted within the network&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- The MS Exchange and Linux mail servers are hosted on-premise.&lt;/span&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=26;" vertex="1" parent="1">
-          <mxGeometry x="165" y="350" width="770" height="30" as="geometry" />
+        <mxCell id="baYjomSHSM_FDcd-nVYS-2" value="Assumptions:&amp;nbsp;&lt;br&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;-&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;a perimeterized, segmented network&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- the SMTP Gateway is an enterprise&amp;nbsp;&lt;i&gt;Secure&lt;/i&gt; Mail Gateway service hosted within the network&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- The MS Exchange and Linux mail servers are hosted on-premise.&lt;/span&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=26;" vertex="1" parent="1">
+          <mxGeometry x="110" y="380" width="920" height="30" as="geometry" />
         </mxCell>
         <mxCell id="EwzuFjVHpDKlOVMrmXMl-2" value="Requirements:&amp;nbsp;&lt;br&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- the solution must provided trusted and secure communication&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- the solution must support both MS Exchange and Linux mail servers&lt;/span&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=26;" vertex="1" parent="1">
-          <mxGeometry x="165" y="180" width="830" height="30" as="geometry" />
+          <mxGeometry x="110" y="190" width="830" height="30" as="geometry" />
         </mxCell>
         <mxCell id="EwzuFjVHpDKlOVMrmXMl-4" value="SMTP Gateway Design" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=26;fontStyle=1" vertex="1" parent="1">
-          <mxGeometry x="165" y="40" width="385" height="30" as="geometry" />
+          <mxGeometry x="120" y="50" width="385" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
@@ -691,7 +691,7 @@
         <mxCell id="gsh-S_FmZg22HxGe3ayR-45" value="" style="verticalLabelPosition=bottom;sketch=0;aspect=fixed;html=1;verticalAlign=top;strokeColor=none;align=center;outlineConnect=0;shape=mxgraph.citrix.firewall;" vertex="1" parent="gsh-S_FmZg22HxGe3ayR-1">
           <mxGeometry x="-2840" y="377.75" width="75" height="93" as="geometry" />
         </mxCell>
-        <mxCell id="gsh-S_FmZg22HxGe3ayR-46" value="&lt;font style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;A dedicated security component will often have a separate interface for its administration, in order to segegrate this functionality from the normal data flows. This management interface is often only exposed in a dedicated, high-privileged zone. A jump server or Virtual Environment can be used to enforce additional restrictions.&lt;/font&gt;&lt;br&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;rotation=0;" vertex="1" parent="gsh-S_FmZg22HxGe3ayR-1">
+        <mxCell id="gsh-S_FmZg22HxGe3ayR-46" value="&lt;font style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;A dedicated security component will often have a separate interface for its administration, in order to segegrate this functionality from the normal data flows. This management interface is often only exposed in a dedicated, high-privileged zone. A jump server, Virtual Environment or PAM solution can be used to enforce additional restrictions.&lt;/font&gt;&lt;br&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;rotation=0;" vertex="1" parent="gsh-S_FmZg22HxGe3ayR-1">
           <mxGeometry x="-2293" y="130" width="503" height="30" as="geometry" />
         </mxCell>
         <mxCell id="gsh-S_FmZg22HxGe3ayR-47" value="&lt;font style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 26px;&quot;&gt;Data Zone&lt;/span&gt;&lt;br&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;rotation=-40;" vertex="1" parent="gsh-S_FmZg22HxGe3ayR-1">
