@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-05-14T11:36:29.197Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Safari/537.36" etag="LSi2lEGw9CTn_yqazfh1" version="18.0.3" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2022-05-14T11:40:48.819Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Safari/537.36" etag="43qhCXBNJLmBFMIY0J1F" version="18.0.3" type="github" pages="3">
   <diagram id="jApyYVyt4Udr0EsSBP02" name="SEG Feature considerations">
     <mxGraphModel dx="1147" dy="753" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
       <root>
@@ -66,7 +66,7 @@
           <mxGeometry x="-3440" y="813" width="60" height="40" as="geometry" />
         </mxCell>
         <mxCell id="MS2HTz0OU2uAcDuZDVn_-29" value="" style="verticalLabelPosition=bottom;sketch=0;aspect=fixed;html=1;verticalAlign=top;strokeColor=none;align=center;outlineConnect=0;shape=mxgraph.citrix.firewall;fontSize=26;" vertex="1" parent="1">
-          <mxGeometry x="-2420" y="647" width="75" height="93" as="geometry" />
+          <mxGeometry x="-2440" y="650" width="75" height="93" as="geometry" />
         </mxCell>
         <mxCell id="MS2HTz0OU2uAcDuZDVn_-42" value="" style="rounded=0;whiteSpace=wrap;html=1;fontSize=26;align=left;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
           <mxGeometry x="-2131.63" y="828" width="310" height="60" as="geometry" />
@@ -227,6 +227,9 @@
         <mxCell id="-ZL5isNHjIAiVJMmVZmS-80" value="Production" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=45;fontColor=#FF0000;" vertex="1" parent="1">
           <mxGeometry x="-2140" y="40" width="60" height="30" as="geometry" />
         </mxCell>
+        <mxCell id="qslBiHPvFCz3kHwW0v_K-1" value="" style="verticalLabelPosition=bottom;sketch=0;aspect=fixed;html=1;verticalAlign=top;strokeColor=none;align=center;outlineConnect=0;shape=mxgraph.citrix.firewall;fontSize=26;" vertex="1" parent="1">
+          <mxGeometry x="-2440" y="437" width="75" height="93" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
@@ -298,7 +301,7 @@
           <mxGeometry x="-3440" y="813" width="60" height="40" as="geometry" />
         </mxCell>
         <mxCell id="ZP6E8Msi36bvybZyYE74-15" value="" style="verticalLabelPosition=bottom;sketch=0;aspect=fixed;html=1;verticalAlign=top;strokeColor=none;align=center;outlineConnect=0;shape=mxgraph.citrix.firewall;fontSize=26;" vertex="1" parent="ZP6E8Msi36bvybZyYE74-1">
-          <mxGeometry x="-2420" y="647" width="75" height="93" as="geometry" />
+          <mxGeometry x="-2450" y="647" width="75" height="93" as="geometry" />
         </mxCell>
         <mxCell id="ZP6E8Msi36bvybZyYE74-16" value="" style="rounded=0;whiteSpace=wrap;html=1;fontSize=26;align=left;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="ZP6E8Msi36bvybZyYE74-1">
           <mxGeometry x="-2131.63" y="935" width="310" height="60" as="geometry" />
@@ -453,9 +456,6 @@
         <mxCell id="ZP6E8Msi36bvybZyYE74-49" value="" style="verticalLabelPosition=bottom;sketch=0;aspect=fixed;html=1;verticalAlign=top;strokeColor=none;align=center;outlineConnect=0;shape=mxgraph.citrix.firewall;" vertex="1" parent="ZP6E8Msi36bvybZyYE74-1">
           <mxGeometry x="-2899" y="902.75" width="75" height="93" as="geometry" />
         </mxCell>
-        <mxCell id="ZP6E8Msi36bvybZyYE74-50" value="AD" style="verticalLabelPosition=bottom;sketch=0;aspect=fixed;html=1;verticalAlign=top;strokeColor=none;align=center;outlineConnect=0;shape=mxgraph.citrix.database_server;fontSize=21;" vertex="1" parent="ZP6E8Msi36bvybZyYE74-1">
-          <mxGeometry x="-2680" y="1090" width="80" height="90" as="geometry" />
-        </mxCell>
         <mxCell id="ZP6E8Msi36bvybZyYE74-51" value="Development" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=45;fontColor=#FF0000;" vertex="1" parent="ZP6E8Msi36bvybZyYE74-1">
           <mxGeometry x="-2006.6299999999999" y="20" width="60" height="35" as="geometry" />
         </mxCell>
@@ -510,6 +510,9 @@
         </mxCell>
         <mxCell id="YwrcWY1H_yVZBE2LZ2vB-0" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;- Dedicated VLAN and Wifi to simulate inbound connections. These can be accessed directly or, better, through vitrual environments (HVD&#39;s)&lt;br&gt;- Network VLANs and Servers are completely segregated from Production.&amp;nbsp;&lt;br&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;rotation=0;" vertex="1" parent="ZP6E8Msi36bvybZyYE74-1">
           <mxGeometry x="-2270" y="167.5" width="490" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="PSE2z66sbOJY9W76quOB-0" value="" style="verticalLabelPosition=bottom;sketch=0;aspect=fixed;html=1;verticalAlign=top;strokeColor=none;align=center;outlineConnect=0;shape=mxgraph.citrix.firewall;fontSize=26;" vertex="1" parent="ZP6E8Msi36bvybZyYE74-1">
+          <mxGeometry x="-2450" y="440" width="75" height="93" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
