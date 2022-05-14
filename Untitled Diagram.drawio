@@ -1,11 +1,17 @@
-<mxfile host="app.diagrams.net" modified="2022-05-14T12:43:14.376Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Safari/537.36" etag="oSglh7OQOwtUDOBxF8xU" version="18.0.3" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2022-05-14T13:52:10.849Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Safari/537.36" etag="PO5VGPItCuDKIvxeUWye" version="18.0.3" type="github" pages="4">
   <diagram id="jApyYVyt4Udr0EsSBP02" name="SEG Feature considerations">
-    <mxGraphModel dx="1147" dy="753" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+    <mxGraphModel dx="1559" dy="986" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="baYjomSHSM_FDcd-nVYS-2" value="Assumptions" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=26;" vertex="1" parent="1">
-          <mxGeometry x="100" y="60" width="480" height="30" as="geometry" />
+        <mxCell id="baYjomSHSM_FDcd-nVYS-2" value="Assumptions:&amp;nbsp;&lt;br&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;-&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;a perimeterized, segmented network&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- an industry-grade Secure Mail Gateway component is used&lt;/span&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=26;" vertex="1" parent="1">
+          <mxGeometry x="160" y="340" width="770" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="EwzuFjVHpDKlOVMrmXMl-2" value="Requirements:&amp;nbsp;&lt;br&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- the solution must provided trusted and secure communication&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- the solution must support both MS Exchange Linux mail servers&lt;/span&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=26;" vertex="1" parent="1">
+          <mxGeometry x="165" y="180" width="830" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="EwzuFjVHpDKlOVMrmXMl-4" value="SMTP Gateway Design" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=26;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="165" y="40" width="770" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
