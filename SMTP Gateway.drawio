@@ -1,10 +1,10 @@
-<mxfile host="app.diagrams.net" modified="2022-05-15T21:34:31.638Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Safari/537.36" etag="724K59k_UHpETYp4JjCP" version="18.0.3" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2022-05-15T21:36:38.165Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Safari/537.36" etag="kYythBPN2XeoVLWbpDq0" version="18.0.3" type="github" pages="4">
   <diagram id="jApyYVyt4Udr0EsSBP02" name="Requirements and Assumptions">
     <mxGraphModel dx="1092" dy="857" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="baYjomSHSM_FDcd-nVYS-2" value="&lt;u&gt;Assumptions&lt;/u&gt;:&amp;nbsp;&lt;br&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- A&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp;perimeterized, segmented network&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- The SMTP Gateway is an enterprise&amp;nbsp;Secure Mail Gateway service hosted within the network&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- The MS Exchange and Linux email servers are hosted on-premise&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- Corporate user and developers access their corporate emails through MS Exchange or Webmail&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- Developers have access to a Linux-based&amp;nbsp;&lt;i&gt;&lt;b&gt;development&lt;/b&gt;&lt;/i&gt; &lt;i&gt;&lt;b&gt;environment&lt;/b&gt;&lt;/i&gt; in which their applications can send out emails without interfering with the production corporate email setup.&amp;nbsp;&lt;/span&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=26;" parent="1" vertex="1">
+        <mxCell id="baYjomSHSM_FDcd-nVYS-2" value="&lt;u&gt;Assumptions&lt;/u&gt;:&amp;nbsp;&lt;br&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- A&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp;perimeterized, segmented network&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- The SMTP Gateway is an enterprise&amp;nbsp;Secure Mail Gateway service hosted within the network&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- The MS Exchange and Linux email servers are hosted on-premise&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- Corporate users and developers access their corporate emails through MS Exchange or Webmail&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- Developers have access to a Linux-based&amp;nbsp;&lt;i&gt;&lt;b&gt;development&lt;/b&gt;&lt;/i&gt; &lt;i&gt;&lt;b&gt;environment&lt;/b&gt;&lt;/i&gt; in which their applications can send out emails without interfering with the production corporate email setup.&amp;nbsp;&lt;/span&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=26;" parent="1" vertex="1">
           <mxGeometry x="110" y="470" width="920" height="30" as="geometry" />
         </mxCell>
         <mxCell id="EwzuFjVHpDKlOVMrmXMl-2" value="&lt;u&gt;Requirements&lt;/u&gt;:&amp;nbsp;&lt;br&gt;- The gateway will act as the gateway to the public Internet for Corporate users and Developers.&lt;br&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- The solution must provide trusted and secure communication&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- The development environment is Linux-based&lt;/span&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=26;" parent="1" vertex="1">
@@ -286,7 +286,7 @@
     </mxGraphModel>
   </diagram>
   <diagram name="high level DEV" id="sB-gzQ24y7XR0osAuDt7">
-    <mxGraphModel dx="4803" dy="986" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1.5" pageWidth="1169" pageHeight="826" background="none" math="0" shadow="0">
+    <mxGraphModel dx="4763" dy="986" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1.5" pageWidth="1169" pageHeight="826" background="none" math="0" shadow="0">
       <root>
         <mxCell id="ZP6E8Msi36bvybZyYE74-0" style=";html=1;" />
         <mxCell id="ZP6E8Msi36bvybZyYE74-1" style=";html=1;" parent="ZP6E8Msi36bvybZyYE74-0" />
@@ -427,6 +427,9 @@
           <mxGeometry x="0.2896" relative="1" as="geometry">
             <mxPoint x="-205" y="1" as="offset" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="ZADCfNP-4naLGFSFoRWJ-0" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=16;fontColor=#000000;endArrow=classic;endFill=1;strokeWidth=1;" edge="1" parent="ZP6E8Msi36bvybZyYE74-1" source="ZP6E8Msi36bvybZyYE74-36" target="ZP6E8Msi36bvybZyYE74-8">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="ZP6E8Msi36bvybZyYE74-36" value="Internet Firewall" style="verticalLabelPosition=bottom;sketch=0;aspect=fixed;html=1;verticalAlign=top;strokeColor=none;align=center;outlineConnect=0;shape=mxgraph.citrix.firewall;" parent="ZP6E8Msi36bvybZyYE74-1" vertex="1">
           <mxGeometry x="-2910" y="230" width="75" height="93" as="geometry" />
