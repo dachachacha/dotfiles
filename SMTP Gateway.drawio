@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-05-14T19:42:27.897Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Safari/537.36" etag="e4ZDimUJVFHlmmhzurDF" version="18.0.3" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2022-05-15T21:34:31.638Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Safari/537.36" etag="724K59k_UHpETYp4JjCP" version="18.0.3" type="github" pages="4">
   <diagram id="jApyYVyt4Udr0EsSBP02" name="Requirements and Assumptions">
-    <mxGraphModel dx="1356" dy="857" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+    <mxGraphModel dx="1092" dy="857" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -17,7 +17,7 @@
     </mxGraphModel>
   </diagram>
   <diagram name="high level PROD" id="e3a06f82-3646-2815-327d-82caf3d4e204">
-    <mxGraphModel dx="5066" dy="986" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1.5" pageWidth="1169" pageHeight="826" background="none" math="0" shadow="0">
+    <mxGraphModel dx="4763" dy="986" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1.5" pageWidth="1169" pageHeight="826" background="none" math="0" shadow="0">
       <root>
         <mxCell id="0" style=";html=1;" />
         <mxCell id="1" style=";html=1;" parent="0" />
@@ -217,7 +217,7 @@
         <mxCell id="-ZL5isNHjIAiVJMmVZmS-56" value="" style="verticalLabelPosition=bottom;sketch=0;aspect=fixed;html=1;verticalAlign=top;strokeColor=none;align=center;outlineConnect=0;shape=mxgraph.citrix.firewall;" parent="1" vertex="1">
           <mxGeometry x="-2910" y="447.75" width="75" height="93" as="geometry" />
         </mxCell>
-        <mxCell id="-ZL5isNHjIAiVJMmVZmS-63" value="&lt;font style=&quot;&quot;&gt;&lt;b style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 21px;&quot;&gt;DMZ 0&lt;/font&gt;&lt;/b&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;: Security and Content Filtering services, e.g. WAF, Secure Mail Gateway&lt;/span&gt;&lt;br&gt;&lt;font style=&quot;font-size: 21px;&quot;&gt;&lt;b&gt;DMZ 1&lt;/b&gt;&lt;/font&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;: Authn/Authz Appliances, e.g. Reverse Proxies, IDP&#39;s&lt;/span&gt;&lt;br&gt;&lt;b style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 21px;&quot;&gt;TZ&lt;/font&gt;&lt;/b&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;: Trusted zone, e.g Web Servers, Mail Servers; strictly authenticated flows; specialized subdivisions are possible.&lt;br&gt;&lt;/span&gt;&lt;font style=&quot;font-size: 21px;&quot;&gt;&lt;b&gt;DZ&lt;/b&gt;&lt;/font&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;: Data Zone for databases and LDAP services&lt;/font&gt;&lt;br&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;rotation=0;" parent="1" vertex="1">
+        <mxCell id="-ZL5isNHjIAiVJMmVZmS-63" value="&lt;font style=&quot;&quot;&gt;&lt;b style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 21px;&quot;&gt;DMZ 0&lt;/font&gt;&lt;/b&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;: Security and Content Filtering services, e.g. WAF, Secure Mail Gateway&lt;/span&gt;&lt;br&gt;&lt;font style=&quot;font-size: 21px;&quot;&gt;&lt;b&gt;DMZ 1&lt;/b&gt;&lt;/font&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;: Authn/Authz Appliances, e.g. Reverse Proxies, IDP&#39;s&lt;/span&gt;&lt;br&gt;&lt;b style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 21px;&quot;&gt;TZ&lt;/font&gt;&lt;/b&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;: Trusted zone, e.g Web Servers, Mail Servers; strictly &lt;b&gt;&lt;i&gt;authenticated&lt;/i&gt;&lt;/b&gt; flows; specialized subdivisions are possible.&lt;br&gt;&lt;/span&gt;&lt;font style=&quot;font-size: 21px;&quot;&gt;&lt;b&gt;DZ&lt;/b&gt;&lt;/font&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;: Data Zone for databases and LDAP services&lt;/font&gt;&lt;br&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;rotation=0;" parent="1" vertex="1">
           <mxGeometry x="-2350" y="250" width="590" height="30" as="geometry" />
         </mxCell>
         <mxCell id="-ZL5isNHjIAiVJMmVZmS-66" value="&lt;font style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 26px;&quot;&gt;Data Zone&lt;/span&gt;&lt;br&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;rotation=-40;" parent="1" vertex="1">
@@ -286,7 +286,7 @@
     </mxGraphModel>
   </diagram>
   <diagram name="high level DEV" id="sB-gzQ24y7XR0osAuDt7">
-    <mxGraphModel dx="5066" dy="986" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1.5" pageWidth="1169" pageHeight="826" background="none" math="0" shadow="0">
+    <mxGraphModel dx="4803" dy="986" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1.5" pageWidth="1169" pageHeight="826" background="none" math="0" shadow="0">
       <root>
         <mxCell id="ZP6E8Msi36bvybZyYE74-0" style=";html=1;" />
         <mxCell id="ZP6E8Msi36bvybZyYE74-1" style=";html=1;" parent="ZP6E8Msi36bvybZyYE74-0" />
@@ -559,7 +559,7 @@
     </mxGraphModel>
   </diagram>
   <diagram name="Managment" id="yQzQCwI-b9QJbhipvbRM">
-    <mxGraphModel dx="5066" dy="986" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1.5" pageWidth="1169" pageHeight="826" background="none" math="0" shadow="0">
+    <mxGraphModel dx="4803" dy="986" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1.5" pageWidth="1169" pageHeight="826" background="none" math="0" shadow="0">
       <root>
         <mxCell id="gsh-S_FmZg22HxGe3ayR-0" style=";html=1;" />
         <mxCell id="gsh-S_FmZg22HxGe3ayR-1" style=";html=1;" parent="gsh-S_FmZg22HxGe3ayR-0" />
