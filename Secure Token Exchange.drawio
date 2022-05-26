@@ -1,1 +1,115 @@
-<mxfile host="app.diagrams.net" modified="2022-05-26T11:05:52.033Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4343.0 Safari/537.36" etag="d-8Ut02mKoxNRwsU5R3U" version="18.1.2" type="github"><diagram id="YVrJ-4OCrlVwxC4zB-cr" name="Page-1">5ZlJj5swGIZ/DceOMIaEHCfJtD10GSmV2jla4IBbB1PjTEJ/fe3gsNiztMqMbLUXhF+88byfF0wAV7vjO47q8iPLMQ2iMD8GcB1E0Rwu5FUJrRbiuBMKTvJOAoOwIb+wFkOt7kmOm0lGwRgVpJ6KGasqnImJhjhnh2m2LaPTVmtUYEvYZIja6leSi1KrIAyHB+8xKUrddJroBzt0zqyFpkQ5O4wkeBPAFWdMdHe74wpTxe7MpSv39pGnfcc4rsSfFMDl7Xq+hndtkdbssEw/gc/bN7qWe0T3+oXRXpSyRpIhwbjuuWjPOA4lEXhTo0ylD9LxAC5LsaMyBeQtaurOhC05YtnuUlePucDHR/sNehoyijDbYcFbmUUXiBYaoI6g6Iz+MPiRaqkcO6E1pCOg6GseIMkbzekvmEUWs82XjQ+kknRKCkSOSUGL1IoS9TIewDJZAceswNyignM5Fekk46JkBasQvRnUJWf7KldE1qFMDXk+MFZrdt+xEK2eV+XYZlOyEhZvv6nyVzOYnoU79fQqBPAsrI+6iS7VjlO3mBOJAHMtdq+h+v60M/JV2Z5n+AkmeqkQiBdYPDeL2U5zTJEg99N+vLxxqWvj5olh3OCk78ZFFzp3KnrNOWpHGWpGKtGMar5VwmhFmU3HfpwYK+cz+aMFNKKm68EQQ/2rXBBWCxdh5SAGLg2By9by8D+hDKCLkQaT6chJYBi8+siJPd51QGBMPa63HYnHsMxpN3XMauYxK2DAch1Xc59ZGbNS7Po7KfUYFvQssBYes4qNwOqXP2cflaFFa4P5PZFMrG0PpaRu1PbGgzOeJHYNzj4Y8xOccYyxcM3tgcMxH7kBg5vzaQ3YZ2VegouNgep8hrN3+15ymxng3I9Ue+fvJThzTQXOwdmfAV6CS8xTLtefT5G9pmZ66xaO/jrhRqWrXF4zVJ06V2V4q45ZTr1qJBTVlDp3kA2qUqK10EtuYsq4EZz9wCtGmTrwrFilfNkSSg0JUVJUMpnJmtXZ6FK5IDtGr/WDHclz+pip07Ohl4h/w8bZAytV/6Nn7GPyaj7aS5U0T9l1dlN52duHsp97wnEnq6t0oTp5p7JWGOfNST1lzXDT9DmbblhN8179u1bPQmNxfWCqeymrZXL49dydvA3/7+HNbw==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2022-05-26T11:13:36.022Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4343.0 Safari/537.36" etag="HY2Mz3Dolj-_qvk79LUp" version="18.1.2" type="github" pages="2">
+  <diagram id="YVrJ-4OCrlVwxC4zB-cr" name="Page-1">
+    <mxGraphModel dx="739" dy="744" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ehPD7D3Yyg8powB8N1Of-1" value="authenticator" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="290" y="200" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ehPD7D3Yyg8powB8N1Of-2" value="STS" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="580" y="120" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ehPD7D3Yyg8powB8N1Of-3" value="Client" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="80" y="110" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ehPD7D3Yyg8powB8N1Of-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.638;entryY=1.013;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="ehPD7D3Yyg8powB8N1Of-4" target="ehPD7D3Yyg8powB8N1Of-1" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ehPD7D3Yyg8powB8N1Of-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.675;entryY=1.038;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="ehPD7D3Yyg8powB8N1Of-4" target="ehPD7D3Yyg8powB8N1Of-12" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="260" y="450" />
+              <mxPoint x="260" y="293" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ehPD7D3Yyg8powB8N1Of-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="ehPD7D3Yyg8powB8N1Of-4" target="ehPD7D3Yyg8powB8N1Of-2" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ehPD7D3Yyg8powB8N1Of-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="ehPD7D3Yyg8powB8N1Of-4" target="ehPD7D3Yyg8powB8N1Of-13" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="350" y="530" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ehPD7D3Yyg8powB8N1Of-4" value="Client" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="310" y="410" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ehPD7D3Yyg8powB8N1Of-5" value="Client" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="60" y="280" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ehPD7D3Yyg8powB8N1Of-6" value="Client" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="160" y="10" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ehPD7D3Yyg8powB8N1Of-7" value="Client" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="150" y="420" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ehPD7D3Yyg8powB8N1Of-8" value="Client" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="360" y="10" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ehPD7D3Yyg8powB8N1Of-9" value="Client" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="450" y="350" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ehPD7D3Yyg8powB8N1Of-10" value="Service" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="290" y="540" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ehPD7D3Yyg8powB8N1Of-11" value="Service" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="260" y="40" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="7N7fR89nuQmcwuyF4sBW-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ehPD7D3Yyg8powB8N1Of-12" target="ehPD7D3Yyg8powB8N1Of-2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="220" y="160" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ehPD7D3Yyg8powB8N1Of-12" value="Service" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="180" y="210" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ehPD7D3Yyg8powB8N1Of-13" value="Service" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="40" y="550" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ehPD7D3Yyg8powB8N1Of-14" value="Service" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="670" y="290" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ehPD7D3Yyg8powB8N1Of-15" value="Service" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="450" y="190" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ehPD7D3Yyg8powB8N1Of-16" value="Service" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="560" y="480" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ehPD7D3Yyg8powB8N1Of-21" value="client authenticates and can henceforth assert its identity" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="460" y="610" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ehPD7D3Yyg8powB8N1Of-23" value="the client then can acquire the tokens it needs to access the services it needs." style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="600" y="590" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="7N7fR89nuQmcwuyF4sBW-4" value="services communicate with the token exchange to validate or decrypt access tokens" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="680" y="680" width="150" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="7N7fR89nuQmcwuyF4sBW-5" value="the STS authenticates the client, then performs the exchange requested" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="740" y="65" width="140" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="UWZ0nsKvOJkC-e7fJ5gk" name="Page-2">
+    <mxGraphModel dx="739" dy="744" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="aa8GGaYEE2ObPrm9NSy6-1" value="anatomy of a token" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="50" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="aa8GGaYEE2ObPrm9NSy6-2" value="header.payload.signature" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="320" y="50" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="aa8GGaYEE2ObPrm9NSy6-3" value="the exchange will possibly modify the header, certainly the signature but the payload remains intact" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="250" y="120" width="290" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
