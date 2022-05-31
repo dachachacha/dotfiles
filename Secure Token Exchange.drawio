@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-05-31T21:10:12.391Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4343.0 Safari/537.36" etag="C-aYs7QTyZ9mifuJVX3d" version="18.1.2" type="github" pages="7">
+<mxfile host="app.diagrams.net" modified="2022-05-31T21:54:27.918Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4343.0 Safari/537.36" etag="EeYTYw5p0rLa7C-ax0E9" version="18.1.2" type="github" pages="7">
   <diagram id="YVrJ-4OCrlVwxC4zB-cr" name="General">
     <mxGraphModel dx="838" dy="744" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
       <root>
@@ -363,7 +363,7 @@
         <mxCell id="D6purunyIqGPWdK0XNNH-3" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="D6purunyIqGPWdK0XNNH-1">
           <mxGeometry y="52" width="320" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="D6purunyIqGPWdK0XNNH-4" value="+ get_token_issuer(subject_token_type): Issuer&#xa;+ verify_token(subject_token, issuer): bool &#xa;+ verify_signature(subject_token, issuer): bool&#xa;+ issueValidationResult(): ValidationResult" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="D6purunyIqGPWdK0XNNH-1">
+        <mxCell id="D6purunyIqGPWdK0XNNH-4" value="+ verify_token(subject_token, issuer): bool &#xa;+ verify_signature(subject_token, issuer): bool&#xa;+ issueValidationResult(): ValidationResult" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="D6purunyIqGPWdK0XNNH-1">
           <mxGeometry y="60" width="320" height="110" as="geometry" />
         </mxCell>
         <mxCell id="D6purunyIqGPWdK0XNNH-5" value="Enricher" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
@@ -403,7 +403,7 @@
           <mxGeometry y="60" width="160" height="26" as="geometry" />
         </mxCell>
         <mxCell id="D6purunyIqGPWdK0XNNH-17" value="ValidationResult" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
-          <mxGeometry x="460" y="394" width="160" height="86" as="geometry" />
+          <mxGeometry x="500" y="520" width="160" height="86" as="geometry" />
         </mxCell>
         <mxCell id="D6purunyIqGPWdK0XNNH-18" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="D6purunyIqGPWdK0XNNH-17">
           <mxGeometry y="26" width="160" height="26" as="geometry" />
@@ -415,7 +415,7 @@
           <mxGeometry y="60" width="160" height="26" as="geometry" />
         </mxCell>
         <mxCell id="pYlDL90S6oFyM78Z9-VV-1" value="SubjectTokenType" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
-          <mxGeometry x="140" y="660" width="320" height="180" as="geometry">
+          <mxGeometry x="150" y="660" width="320" height="180" as="geometry">
             <mxRectangle x="810" y="80" width="110" height="26" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
@@ -451,6 +451,20 @@
         </mxCell>
         <mxCell id="pYlDL90S6oFyM78Z9-VV-13" value="+ method(type): type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="pYlDL90S6oFyM78Z9-VV-10">
           <mxGeometry y="68" width="240" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="dgl1FNhGgwTeW8u4_g5R-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="4unemSOvh4Vl30kJYrBd-8" target="D6purunyIqGPWdK0XNNH-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="400" y="500" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="80" y="388" />
+              <mxPoint x="80" y="467" />
+              <mxPoint x="100" y="467" />
+              <mxPoint x="100" y="498" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dgl1FNhGgwTeW8u4_g5R-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="D6purunyIqGPWdK0XNNH-4" target="D6purunyIqGPWdK0XNNH-17">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
@@ -512,13 +526,13 @@
         <mxCell id="WboQ01cgOnOwz09RoFhZ-1" value="TokenServiceProcessing" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
           <mxGeometry x="160" y="60" width="500" height="240" as="geometry" />
         </mxCell>
-        <mxCell id="WboQ01cgOnOwz09RoFhZ-2" value="+ authenticator: Authenticator&#xa;+ validation: Validation&#xa;+ issuance: Issuer" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="WboQ01cgOnOwz09RoFhZ-1">
+        <mxCell id="WboQ01cgOnOwz09RoFhZ-2" value="+ authenticator: Authenticator&#xa;+ validation: Validation&#xa;+ issuance: Issuer&#xa;+ input_post_data: InputPostData" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="WboQ01cgOnOwz09RoFhZ-1">
           <mxGeometry y="26" width="500" height="74" as="geometry" />
         </mxCell>
         <mxCell id="WboQ01cgOnOwz09RoFhZ-3" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="WboQ01cgOnOwz09RoFhZ-1">
           <mxGeometry y="100" width="500" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="WboQ01cgOnOwz09RoFhZ-4" value="+ get_authorization_header(): Jwt&#xa;+ authenticate(authorization_header): Client&#xa;+ authorize(client,subject_token): boolean&#xa;+ validateInput(token_service_input): TokenServiceInputValidationResult&#xa;+ validateSubjectToken(subject_token): ValidationResult&#xa;+ issueRequestedToken(validation_result, subject_token): RequestedTokenType" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="WboQ01cgOnOwz09RoFhZ-1">
+        <mxCell id="WboQ01cgOnOwz09RoFhZ-4" value="+ get_authorization_header(): Jwt&#xa;+ authenticate(authorization_header): Client&#xa;+ is_authorized(client,subject_token_type,requested_token_type): boolean&#xa;+ validateInput(token_service_input): TokenServiceInputValidationResult&#xa;+ validateSubjectToken(subject_token): ValidationResult&#xa;+ issueRequestedToken(validation_result, subject_token): RequestedTokenType" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="WboQ01cgOnOwz09RoFhZ-1">
           <mxGeometry y="108" width="500" height="132" as="geometry" />
         </mxCell>
         <mxCell id="kfpqJMpfdrR5X3ty1TU2-1" value="Authenticator" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
@@ -560,15 +574,123 @@
       </root>
     </mxGraphModel>
   </diagram>
-  <diagram id="Tca_YMrdaisTMfUQVAx3" name="Validate">
+  <diagram id="Tca_YMrdaisTMfUQVAx3" name="Validation">
     <mxGraphModel dx="1090" dy="744" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="8xO5CrxiBN12sEScnQQb-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.933;entryY=0.005;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="-NTvB36HztySKSz5CHSB-1" target="tfRfzH5kwrFHvCzTKG9S-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="370" y="300" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8xO5CrxiBN12sEScnQQb-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="-NTvB36HztySKSz5CHSB-1" target="Mbb0RqOwDV8LkIzdCSBq-5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="370" y="300" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="370" y="280" />
+              <mxPoint x="750" y="280" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8xO5CrxiBN12sEScnQQb-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.647;entryY=0.006;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="tfRfzH5kwrFHvCzTKG9S-1" target="Mbb0RqOwDV8LkIzdCSBq-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tfRfzH5kwrFHvCzTKG9S-1" value="Validation" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="345" width="400" height="188" as="geometry" />
+        </mxCell>
+        <mxCell id="tfRfzH5kwrFHvCzTKG9S-2" value="+ subject_token: SubjectTokenType&#xa;+ client: Client" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="tfRfzH5kwrFHvCzTKG9S-1">
+          <mxGeometry y="26" width="400" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="tfRfzH5kwrFHvCzTKG9S-3" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="tfRfzH5kwrFHvCzTKG9S-1">
+          <mxGeometry y="80" width="400" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="tfRfzH5kwrFHvCzTKG9S-4" value="+ get_validator(subject_token_type): Validator&#xa;+ extract_issuer(subject_token): Issuer&#xa;+ validate_token(subject_token,issuer,audience): ValidationResult&#xa;+ can_client_validate(subject_token,client): AuthorizationResult" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="tfRfzH5kwrFHvCzTKG9S-1">
+          <mxGeometry y="88" width="400" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="tfRfzH5kwrFHvCzTKG9S-6" value="ValidationResult" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="520" y="664" width="160" height="86" as="geometry" />
+        </mxCell>
+        <mxCell id="tfRfzH5kwrFHvCzTKG9S-7" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="tfRfzH5kwrFHvCzTKG9S-6">
+          <mxGeometry y="26" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="tfRfzH5kwrFHvCzTKG9S-8" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="tfRfzH5kwrFHvCzTKG9S-6">
+          <mxGeometry y="52" width="160" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="tfRfzH5kwrFHvCzTKG9S-9" value="+ method(type): type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="tfRfzH5kwrFHvCzTKG9S-6">
+          <mxGeometry y="60" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="8xO5CrxiBN12sEScnQQb-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Mbb0RqOwDV8LkIzdCSBq-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="510" y="690" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Mbb0RqOwDV8LkIzdCSBq-1" value="Validator" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="110" y="630" width="320" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="Mbb0RqOwDV8LkIzdCSBq-2" value="+ validatorType: SubjectTokenTypeValidator" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="Mbb0RqOwDV8LkIzdCSBq-1">
+          <mxGeometry y="26" width="320" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Mbb0RqOwDV8LkIzdCSBq-3" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="Mbb0RqOwDV8LkIzdCSBq-1">
+          <mxGeometry y="52" width="320" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="Mbb0RqOwDV8LkIzdCSBq-4" value="+ verify_token(subject_token, issuer): bool &#xa;+ verify_signature(subject_token, issuer): bool&#xa;+ verify_issuer(subject_token.iss): bool&#xa;+ verify_audience(subject_token.aud): bool&#xa;+ issueValidationResult(): ValidationResult" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="Mbb0RqOwDV8LkIzdCSBq-1">
+          <mxGeometry y="60" width="320" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="Mbb0RqOwDV8LkIzdCSBq-5" value="SubjectToken" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="590" y="10" width="320" height="180" as="geometry">
+            <mxRectangle x="810" y="80" width="110" height="26" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Mbb0RqOwDV8LkIzdCSBq-6" value="+ aud: String&#xa;+ iss: String&#xa;+ lifetime&#xa;+ .." style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="Mbb0RqOwDV8LkIzdCSBq-5">
+          <mxGeometry y="26" width="320" height="74" as="geometry" />
+        </mxCell>
+        <mxCell id="Mbb0RqOwDV8LkIzdCSBq-7" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="Mbb0RqOwDV8LkIzdCSBq-5">
+          <mxGeometry y="100" width="320" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="Mbb0RqOwDV8LkIzdCSBq-8" value="+ getIssuer(): Issuer&#xa;+ getAudience(): Audience&#xa;+ getPeripheralClaims(): ClaimSet" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;direction=west;" vertex="1" parent="Mbb0RqOwDV8LkIzdCSBq-5">
+          <mxGeometry y="108" width="320" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="Mbb0RqOwDV8LkIzdCSBq-9" value="SubjectTokenType" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="690" y="345" width="320" height="80" as="geometry">
+            <mxRectangle x="810" y="80" width="110" height="26" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Mbb0RqOwDV8LkIzdCSBq-11" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="Mbb0RqOwDV8LkIzdCSBq-9">
+          <mxGeometry y="26" width="320" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="-NTvB36HztySKSz5CHSB-1" value="TokenServiceProcessing" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="30" y="30" width="500" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="-NTvB36HztySKSz5CHSB-2" value="+ authenticator: Authenticator&#xa;+ validation: Validation&#xa;+ issuance: Issuer&#xa;+ input_post_data: InputPostData" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="-NTvB36HztySKSz5CHSB-1">
+          <mxGeometry y="26" width="500" height="74" as="geometry" />
+        </mxCell>
+        <mxCell id="-NTvB36HztySKSz5CHSB-3" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="-NTvB36HztySKSz5CHSB-1">
+          <mxGeometry y="100" width="500" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="-NTvB36HztySKSz5CHSB-4" value="+ get_authorization_header(): Jwt&#xa;+ authenticate(authorization_header): Client&#xa;+ is_authorized(client,subject_token_type,requested_token_type): boolean&#xa;+ validateInput(token_service_input): TokenServiceInputValidationResult&#xa;+ validateSubjectToken(subject_token): ValidationResult&#xa;+ issueRequestedToken(validation_result, subject_token): RequestedTokenType" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="-NTvB36HztySKSz5CHSB-1">
+          <mxGeometry y="108" width="500" height="132" as="geometry" />
+        </mxCell>
+        <mxCell id="-NTvB36HztySKSz5CHSB-5" value="EncryptToken" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="690" y="500" width="190" height="80" as="geometry">
+            <mxRectangle x="810" y="80" width="110" height="26" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-NTvB36HztySKSz5CHSB-6" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="-NTvB36HztySKSz5CHSB-5">
+          <mxGeometry y="26" width="190" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="-NTvB36HztySKSz5CHSB-7" value="SignedToken" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="900" y="500" width="190" height="80" as="geometry">
+            <mxRectangle x="810" y="80" width="110" height="26" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-NTvB36HztySKSz5CHSB-8" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="-NTvB36HztySKSz5CHSB-7">
+          <mxGeometry y="26" width="190" height="54" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
-  <diagram id="of0BCsUzv152gg-iel5U" name="Issue">
+  <diagram id="of0BCsUzv152gg-iel5U" name="Issuance">
     <mxGraphModel dx="1090" dy="744" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
       <root>
         <mxCell id="0" />
